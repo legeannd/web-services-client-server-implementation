@@ -49,7 +49,7 @@ def get_product_by_id(productId):
     result = [result for result in products if result['id'] == productId]
     if len(result) == 0:
         abort(404)
-    return jsonify({'livro': result[0]})
+    return jsonify({'product': result[0]})
 
 
 # apagar produto pelo id
